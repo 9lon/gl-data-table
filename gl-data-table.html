@@ -1,0 +1,75 @@
+<link rel="import" href="../polymer/polymer.html">
+
+
+<dom-module id="gl-data-table">
+    <template>
+        <style>
+            table{
+                border-collapse: collapse;
+                width: 100%;
+            }
+            th,td{
+                text-align: center;
+            }
+            tr:nth-child(even){background-color: #f2f2f2}
+            th{
+                background-color: cornflowerblue;
+                color: white;
+                height: 30px;
+                font-size: 18px;
+            }
+            td{
+                height: 30px;
+                font-size: 16px;
+            }
+        </style>
+        <div style="overflow-x:auto;">
+            <table>
+            <thead>
+               <tr>
+                   <th>ID</th>
+                   <th>FirstName</th>
+                   <th>LastName</th>
+                   <th>Email</th>
+                   <th>Tel</th>
+               </tr> 
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Name1</td>
+                    <td>LastName1</td>
+                    <td>name2@mail.com</td>
+                    <td>1234</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Name2</td>
+                    <td>LastName2</td>
+                    <td>name1@mail.com</td>
+                    <td>1234</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Name3</td>
+                    <td>LastName3</td>
+                    <td>name1@mail.com</td>
+                    <td>1234</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Name4</td>
+                    <td>LastName4</td>
+                    <td>name1@mail.com</td>
+                    <td>1234</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </template>
+    <script>
+        Polymer({
+           is: 'gl-data-table' 
+        });
+    </script>
+</dom-module>

@@ -1,0 +1,94 @@
+
+<!--paper-button-->
+<link rel="import" href="../../../../../bower_components/paper-button/paper-button.html">
+
+<dom-module id="gl-table-body">
+   <template> 
+        <style>
+            :host{
+                display: table-row-group;
+                vertical-align: middle;
+                border-color: inherit;
+            }
+            tr, td{
+               border-bottom: 1px solid black;
+                padding: 10px;
+            }
+            tr:nth-child(even){background-color: #f2f2f2}
+            paper-button.custom {
+                --paper-button-ink-color: var(--paper-white-a200);
+                /* These could also be individually defined for each of the
+                  specific css classes, but we'll just do it once as an example */
+                --paper-button-flat-keyboard-focus: {
+                  background-color: var(--paper-white-a200);
+                  color: white !important;
+                };
+                --paper-button-raised-keyboard-focus: {
+                  background-color: var(--paper-white-a200) !important;
+                  color: white !important;
+                };
+            }
+             paper-button.indigo {
+                background-color: var(--paper-green-500);
+                color: white;
+                --paper-button-raised-keyboard-focus: {
+                  background-color: var(--paper-white-a200) !important;
+                  color: white !important;
+                };
+            }
+        </style>
+        
+             <template is="dom-repeat" items="{{dataContact}}">
+              <tr>
+                <td>{{item.row1}}</td>
+                <td>{{item.row2}}</td>
+                <td>{{item.row3}}</td>
+                <td>{{item.row1}}</td>
+                <td>{{item.row2}}</td>
+                <td>{{item.row3}}</td>
+                <td>{{item.row1}}</td>
+                <td>{{item.row2}}</td>
+                <td>{{item.row3}}</td>
+                <td>{{item.row1}}</td>
+                <td>{{item.row2}}</td>
+                <td><paper-button on-tap="goToPage" raised class="custom indigo">View</paper-button></td>
+              </tr>
+              
+           </template>
+        
+    </template>
+    
+    <script>
+        Polymer({
+            is: 'gl-table-body',
+            behaviors:[nxCoreBehavior],
+            ready: function() {
+            this.dataContact = [
+                {
+                    row1: 'name1',
+                    row2: '1234',
+                    row3: 'name1@mail.com'
+                },
+                {
+                    row1: 'name2',
+                    row2: '4321',
+                    row3: 'name2@mail.com'
+                },
+                {
+                    row1: 'name3',
+                    row2: '4321',
+                    row3: 'name3@mail.com'
+                },
+                 {
+                    row1: 'name4',
+                    row2: '4321',
+                    row3: 'name4@mail.com'
+                },
+            ];
+            },
+            goToPage:function(){
+                this.nxChangePath('app/manage');
+            }
+        });
+    </script>
+</dom-module>

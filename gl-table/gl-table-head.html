@@ -1,0 +1,58 @@
+
+
+
+<dom-module id="gl-table-head">
+    <template>
+        <style>
+            :host{
+               display: table-header-group;
+               vertical-align: middle;
+                border-color: inherit;
+            }
+            th{
+                text-align: center;
+                 height: 50px;
+                 border-bottom: 1px solid black;
+                 background-color: #4CAF50;
+                 color: white;
+                 
+            }
+        </style>
+        
+           <template is="dom-repeat" items="{{contact}}">
+            <tr>
+               <th>{{item.col1}}</th>
+               <th>{{item.col2}}</th>
+               <th>{{item.col3}}</th>
+               <th>{{item.col4}}</th>
+               <th>{{item.col5}}</th>
+               <th>{{item.col6}}</th>
+               <th>{{item.col1}}</th>
+               <th>{{item.col2}}</th>
+               <th>{{item.col3}}</th>
+               <th>{{item.col4}}</th>
+               <th>{{item.col5}}</th>
+               <th>{{item.col6}}</th>
+            </tr>
+           </template>
+       
+    </template>
+    <script>
+        Polymer({
+            is: 'gl-table-head',
+            ready: function() {
+            this.contact = [
+                {
+                    col1: 'name',
+                    col2: 'tel',
+                    col3: 'email',
+                    col4: 'name',
+                    col5: 'tel',
+                    col6: 'button'
+                },
+                
+            ];
+            }
+        });
+    </script>
+</dom-module>

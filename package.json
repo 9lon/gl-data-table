@@ -1,0 +1,24 @@
+{
+  "name": "gl-data-table",
+  "version": "1.0.0",
+  "description": "table for polymer ",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/9lon/gl-data-table.git"
+  },
+  "author": "kitz Parnupat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/9lon/gl-data-table/issues"
+  },
+  "homepage": "https://github.com/9lon/gl-data-table#readme",
+  "devDependencies": {
+    "gulp-install": "^0.6.0",
+    "gulp": "^3.9.1",
+    "gulp-html-replace": "^1.6.1" 
+  }
+}

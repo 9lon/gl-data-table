@@ -1,0 +1,20 @@
+{
+  "name": "gl-data-table",
+  "homepage": "https://github.com/9lon/gl-data-table",
+  "authors": [
+    "kitz Parnuapt"
+  ],
+  "description": "table for polymer",
+  "main": "demo/index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "^1.6.1"
+  }
+}
