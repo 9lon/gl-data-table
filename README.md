@@ -13,5 +13,5 @@ Latest ✔ | Latest ✔ | Latest ✔ |
 Using bower:
 
 ```bash
-$ bower install 9lon/gl-form-panel
+$ bower install 9lon/gl-form-table
 ```
