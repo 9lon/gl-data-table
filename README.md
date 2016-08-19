@@ -1,4 +1,4 @@
-# 9lon/gl-form-table
+# 9lon/gl-data-table
 Element for [9lon](https://github.com/9lon).
 
 ## Features
@@ -13,5 +13,5 @@ Latest ✔ | Latest ✔ | Latest ✔ |
 Using bower:
 
 ```bash
-$ bower install 9lon/gl-form-table
+$ bower install 9lon/gl-data-table
 ```
